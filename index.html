@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template using flex properties</title>
+    <style>
+        .main{
+            border: 2px solid black;
+            width: 55vw;
+            height: 65vh;
+            margin-left: 21%;
+            /* display: flex; */
+        }
+        .cd1 {
+            border: 2px solid rgb(238, 255, 0);
+            width: 54.2vw;
+            height: 9vh;
+            margin: .5%;
+            background-color: rgb(255, 0, 140);
+        }
+        .cd2 {
+            border: 3px solid rgb(0, 255, 34);
+            width: 54.2vw;
+            height: 35vh;
+            margin: .5%;
+
+        }
+        .gc1 {
+            border: 2px solid rgb(217, 217, 243);
+            width: 12vw;
+            height: 33.5vh;
+            margin: .5%;
+            background-color: rgb(0, 217, 255);
+        }
+        .gc2 {
+            border: 2px solid palegreen;
+            width: 40.9vw;
+            height: 33.5vh;
+            margin-left: 12.4vw;
+            margin-top: -1%;
+            display: flex;
+            background-color: palegreen;
+        }
+        .ggc1 {
+            border: 2px solid red;
+            width: 13vw;
+            height: 10vh;
+            margin: .3vw;
+            background-color: rgb(123, 104, 193);
+        }
+        .ggc2 {
+            border: 2px solid rgb(9, 255, 0);
+            width: 13vw;
+            height: 10vh;
+            margin: .3vw;
+            background-color: rgb(80, 80, 206);
+        }
+        .ggc3 {
+            border: 2px solid rgb(252, 11, 11);
+            width: 12.3vw;
+            height: 10vh;
+            margin: .3vw;
+            background-color: rgb(184, 193, 104);
+        }
+           /* footer child */
+           .cd3 {
+            border: 2px solid rgb(233, 207, 10);
+            width: 54.2;
+            height: 17.3vh;
+            margin: .5%;
+            display: flex;
+            justify-content:space-around;
+            background-color: yellow;
+        
+        }
+        .fc1, .fc2, .fc3, .fc4{
+            border: 2px solid;
+            width: 13vw;
+            height: 16vh;
+            margin-top: .5%;
+            background-color: black;
+        }
+        .footer1 {
+            display: flex;
+            padding: 2%;
+            justify-content: space-between;
+            gap: 3px;
+        }
+        .fgc1, .fgc2{
+            border: 2px solid rgb(172, 124, 124);
+            width: 6vw;
+            height: 10vh;
+            margin-top: 2vh;
+            background-color: rgb(198, 106, 106);
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Template Layout using Flex</h2>
+    <div class="main">
+            <!-- first child -->
+            <div class="cd1"></div>
+
+            <!-- second child -->
+            <div class="cd2">
+                
+                <!-- grand child 1 -->
+                <div class="gc1">
+                    <!-- grand child 2 -->
+                    <div class="gc2">
+                        
+                            <div>
+                                <!-- grand grand child 1 -->
+                                <div class="ggc1">
+                                </div>
+                                <!-- grand grand child 2 -->
+                                <div class="ggc1">
+                                </div>
+                                <!-- grand grand child 3 -->
+                                <div class="ggc1">
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="ggc2" ></div>
+                                <div class="ggc2"></div>
+                                <div class="ggc2"></div>
+                            </div>
+                        
+                            <div>
+                                <div class="ggc3" ></div>
+                                <div class="ggc3"></div>
+                                <div class="ggc3"></div>
+                                </div>    
+                            </div>
+                </div>
+            </div>
+
+            <div class="cd3">
+                <div class="fc1">
+                    <div class="footer1">
+                        <div class="fgc1"></div>
+                        <div class="fgc2"></div>
+                    </div>  
+                </div>
+                     
+                <div class="fc2">
+                    <div class="footer1">
+                        <div class="fgc1"></div>
+                        <div class="fgc2"></div>
+                    </div> 
+                </div>
+                <div class="fc3">
+                    <div class="footer1">
+                        <div class="fgc1"></div>
+                        <div class="fgc2"></div>
+                    </div> 
+                </div>
+                <div class="fc3">  <div class="footer1">
+                    <div class="fgc1"></div>
+                    <div class="fgc2"></div>
+                </div> </div>
+            </div>
+    </div>
+
+</body>
+</html>
